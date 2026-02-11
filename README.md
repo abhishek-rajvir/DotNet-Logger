@@ -1,30 +1,41 @@
-DotNet-Logger
+# DotNet-Logger
 
-A lightweight logging application built with ASP.NET MVC that provides logging functionality through a REST API endpoint.
+A lightweight logging application built with **ASP.NET MVC** that provides logging functionality through a REST API endpoint.
 
-Overview
+---
 
-DotNet-Logger is a centralized logging service that allows applications to send log messages via HTTP requests.
-It can be integrated into other services or applications to collect and manage logs in a structured way.
+## Overview
 
-Features
+**DotNet-Logger** is a centralized logging service that allows applications to send log messages via HTTP requests.  
+It can be integrated with other services or applications to collect, store, and manage logs in a structured and consistent format.
 
-REST API endpoint for logging
+The system is designed to be simple, extensible, and easy to integrate into distributed or microservice-based architectures.
 
-Supports multiple log levels (e.g., Info, Warning, Error, Debug)
+---
 
-Structured log storage
+## Features
 
-Simple and extensible architecture
+- REST API endpoint for logging
+- Supports multiple log levels (Info, Warning, Error, Debug, Critical)
+- Structured log storage
+- Clean and extensible architecture
+- Easy integration with external systems
+- JSON-based request/response handling
 
-Easy integration with other services
+---
 
-Tech Stack
+## Tech Stack
 
-.NET (ASP.NET MVC / ASP.NET Core MVC)
+- ASP.NET Core 
+- C#
 
-C#
+---
 
-RESTful API
+## How It Works
 
-JSON request/response format
+1. External applications send log data via HTTP POST request.
+2. The API validates and processes the request.
+3. The log entry is stored (file depending on specified location).
+4. A success response is returned.
+
+---
